@@ -1,0 +1,28 @@
+section,div{
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+}
+body{
+    background-color: black;
+    font-family: Arial;
+}
+.icon{
+    padding-left: 50px;
+    padding-right: 50px;
+    color: red;
+    font-size: 50px;
+}
+.items{
+    font-size: 18px;
+    color: white;
+    line-height: 78px;
+    font-weight: bold;
+}
+.items3{
+    border: 2px solid white;
+}
+items2{
+    display: flex;
+    flex: 5;
+}
