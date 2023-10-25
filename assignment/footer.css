@@ -1,0 +1,27 @@
+footer *{
+    color: black;
+    font-size: large;
+    font-family: cursive;
+}
+
+footer{
+    background-color: #F2F2F2;
+}
+footer,div{
+    border-radius: 2px;
+    padding: 10px;
+    flex: 1;
+    margin: 5px;
+}
+
+footer{
+    display: flex;
+}
+li{
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+li a{
+      text-decoration: none;
+}
