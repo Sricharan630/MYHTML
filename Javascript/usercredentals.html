@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label>Email :</label>
+        <input type="email" placeholder="EnterEmail" id="email"/>
+    </div>
+    <div style="position: relative;">
+        <label>Password :</label>
+        <input type="password" placeholder="Enter Password" id="password"/>
+        <i class="fa-solid fa-eye" style="position: absolute; top: 2px;left: 215px;" id="password-icon" onclick="onTogglePasswordIcon()"></i>
+    </div>
+    <button onclick="loginuser()">Login</button>
+    <p id="message"></p>
+
+</body>
+
+    
+    
+<script>
+        var email='sricharan@gmail.com';
+        var dbemail='sricharan@gmail.com';
+        var password ='sri@123';
+        var dbpassword ='sri@123';
+    function loginuser(){
+        var email =document.getElementById('email').value;
+        var password=document.getElementById('password').value;
+        var result = email==dbemail && password==dbpassword ? 'login success':'incorrect username or password';
+        document.getElementById('message').innerHTML=result;
+        console.log(result);
+    }
+    var ispasswordvisible = false;
+    function onTogglePasswordIcon(){
+        var passwordIcon=document.getElementById('password-icon');
+        var password =document.getElementById('password');
+        ispasswordvisible = ! ispasswordvisible;
+        var iconName=ispasswordvisible ? 'fa-eye-slash':'fa-eye';
+        var type = ispasswordvisible ? 'text': 'password';
+        passwordIcon.classList.remove('fa-eye');
+        passwordIcon.classList.add(iconName);
+        password.type=type;
+    
+    }
+</script>
+<script src="https://kit.fontawesome.com/095989defa.js" crossorigin="anonymous"></script>
+</html>
